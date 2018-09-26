@@ -8,7 +8,9 @@
 </head>
 <body>
 	
-	Student Name: ${param.student_name }
-
+	Student Name: ${param.student_name}
+	<br>
+	UpperCase : ${ message }
+	
 </body>
 </html>
