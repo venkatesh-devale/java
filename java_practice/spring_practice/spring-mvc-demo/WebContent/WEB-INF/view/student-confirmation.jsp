@@ -15,7 +15,13 @@
 	
 	Student Successfully registered!
 	
+	<br><br>
+	
 	Student FirstName: ${student.firstName } ${ student.lastName  }
+	
+	<br><br>
+	
+	Country: ${ student.country }
 
 </body>
 
