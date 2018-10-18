@@ -2,6 +2,8 @@ package com.hibernate.venky.model.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -9,8 +11,13 @@ import javax.persistence.Table;
 @Table(name="student")
 public class Student {
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
 	private int id;
+	
+	public Student() {
+		
+	}
 	
 	public Student(String first_name, String last_name, String email) {
 		this.first_name = first_name;
@@ -51,4 +58,12 @@ public class Student {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", first_name=" + first_name + ", last_name=" + last_name + ", email=" + email
+				+ "]";
+	}
+	
+	
 }

@@ -7,7 +7,7 @@ import org.hibernate.cfg.Configuration;
 
 import com.hibernate.venky.model.entity.Student;
 
-public class CreateStudentDemo {
+public class DeleteStudentDemo {
 
 	public static void main(String[] args) {
 		SessionFactory sessionFactory = new Configuration()
@@ -16,16 +16,18 @@ public class CreateStudentDemo {
 											.buildSessionFactory();
 		Session session = sessionFactory.getCurrentSession();
 		try {
-			Student student = new Student("Venkatesh", "Devale", "devalevenkatesh@gmail.com");
-			System.out.println("Student with name: " + student.getFirst_name()+ " created");
 			session.beginTransaction();
-			System.out.println("Transaction has started...saving the student");
-			session.save(student);
-			System.out.println("Commiting the transaction...");
+			Student student = session.get(Student.class, 1);
+			System.out.println("Got student with firstname to delete: "+ student.getFirst_name());
+			
+			session.delete(student);
+			
+			
 			session.getTransaction().commit();
-			System.out.println("Student saved successfully");
+			System.out.println("Student deleted");
+			
 		} catch(Exception e) {
-			System.out.println("Exception Occured in saving student");
+			System.out.println("Could not update");
 			e.printStackTrace();
 		} finally {
 			session.close();

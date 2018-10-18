@@ -7,7 +7,7 @@ import org.hibernate.cfg.Configuration;
 
 import com.hibernate.venky.model.entity.Student;
 
-public class CreateStudentDemo {
+public class ReadStudentDemo {
 
 	public static void main(String[] args) {
 		SessionFactory sessionFactory = new Configuration()
@@ -16,7 +16,7 @@ public class CreateStudentDemo {
 											.buildSessionFactory();
 		Session session = sessionFactory.getCurrentSession();
 		try {
-			Student student = new Student("Venkatesh", "Devale", "devalevenkatesh@gmail.com");
+			Student student = new Student("Prady", "Patil", "pt@gmail.com");
 			System.out.println("Student with name: " + student.getFirst_name()+ " created");
 			session.beginTransaction();
 			System.out.println("Transaction has started...saving the student");
@@ -24,8 +24,15 @@ public class CreateStudentDemo {
 			System.out.println("Commiting the transaction...");
 			session.getTransaction().commit();
 			System.out.println("Student saved successfully");
+			
+			//getting the student
+			session = sessionFactory.getCurrentSession();
+			session.beginTransaction();
+			Student new_student = session.get(Student.class, student.getId());
+			session.getTransaction().commit();
+			System.out.println("Student retrived: " + new_student.toString());
 		} catch(Exception e) {
-			System.out.println("Exception Occured in saving student");
+			System.out.println("Exception Occured in reading the student");
 			e.printStackTrace();
 		} finally {
 			session.close();

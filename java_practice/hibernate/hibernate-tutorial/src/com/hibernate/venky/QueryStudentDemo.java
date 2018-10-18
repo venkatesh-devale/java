@@ -1,13 +1,15 @@
 package com.hibernate.venky;
 
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 import com.hibernate.venky.model.entity.Student;
 
-public class CreateStudentDemo {
+public class QueryStudentDemo {
 
 	public static void main(String[] args) {
 		SessionFactory sessionFactory = new Configuration()
@@ -16,21 +18,25 @@ public class CreateStudentDemo {
 											.buildSessionFactory();
 		Session session = sessionFactory.getCurrentSession();
 		try {
-			Student student = new Student("Venkatesh", "Devale", "devalevenkatesh@gmail.com");
-			System.out.println("Student with name: " + student.getFirst_name()+ " created");
+			
 			session.beginTransaction();
-			System.out.println("Transaction has started...saving the student");
-			session.save(student);
-			System.out.println("Commiting the transaction...");
+			List<Student> students = session.createQuery("from Student s where s.email like '%hub%'").list();
 			session.getTransaction().commit();
-			System.out.println("Student saved successfully");
+			System.out.println("Printing out the student:");
+			displayStudents(students);
+			System.out.println("Done!");
 		} catch(Exception e) {
-			System.out.println("Exception Occured in saving student");
 			e.printStackTrace();
 		} finally {
 			session.close();
 		}
 
+	}
+
+	private static void displayStudents(List<Student> students) {
+		for(Student student:students) {
+			System.out.println(student);
+		}
 	}
 
 }
