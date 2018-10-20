@@ -22,10 +22,10 @@ public class DeleteStudentDemo {
 			session.beginTransaction();
 			
 			//returns null entity if not found
-			Instructor instructor = session.get(Instructor.class, 1);
+			Instructor instructor = session.get(Instructor.class, 2);
 			
 			if(instructor != null) {
-				session.remove(instructor);
+				session.delete(instructor);
 				session.getTransaction().commit();
 				System.out.println("Instructor removed succcessfully");
 			} else {
