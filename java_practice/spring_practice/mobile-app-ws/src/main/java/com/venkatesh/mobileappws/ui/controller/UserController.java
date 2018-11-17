@@ -127,4 +127,14 @@ public class UserController {
         return  addressesResponse;
     }
 
+    @GetMapping(path = "/{userid}/addresses/{addressid}")
+    public AddressResponseModel getUserAddress(@PathVariable String addressid) {
+
+        AddressDto addressDto = addressService.getSpecificAddress(addressid);
+
+        ModelMapper modelMapper = new ModelMapper();
+
+        return modelMapper.map(addressDto, AddressResponseModel.class);
+    }
+
 }

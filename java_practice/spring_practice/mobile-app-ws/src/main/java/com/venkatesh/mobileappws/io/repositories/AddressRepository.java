@@ -11,4 +11,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface AddressRepository extends CrudRepository<AddressEntity, Long>{
     List<AddressEntity> findAllByUser(UserEntity userEntity);
+    AddressEntity findByAddressId(String addressId);
 }
