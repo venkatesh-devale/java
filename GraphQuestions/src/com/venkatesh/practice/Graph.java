@@ -21,6 +21,7 @@ public class Graph {
 
     public void addEdge(int s, int d) {
         this.adjacencyList[s].add(d);
+        this.adjacencyList[d].add(s);
     }
 
     public void printGraph() {
@@ -57,5 +58,17 @@ public class Graph {
 
     public List<Integer>[] getAdjacencyList() {
         return adjacencyList;
+    }
+
+    public void setVertices(int vertices) {
+        this.vertices = vertices;
+    }
+
+    public void setVisited(boolean[] visited) {
+        this.visited = visited;
+    }
+
+    public void setAdjacencyList(List<Integer>[] adjacencyList) {
+        this.adjacencyList = adjacencyList;
     }
 }
