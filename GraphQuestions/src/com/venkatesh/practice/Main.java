@@ -3,19 +3,12 @@ package com.venkatesh.practice;
 public class Main {
 
     public static void main(String[] args) {
-	    Graph g2 = new Graph(13);
-        g2.addEdge(0, 1);
-        g2.addEdge(0, 2);
-        g2.addEdge(0, 3);
-        g2.addEdge(1, 4);
-        g2.addEdge(1, 5);
-        g2.addEdge(1, 6);
-        g2.addEdge(2, 7);
-        g2.addEdge(2, 8);
-        g2.addEdge(2, 9);
-        g2.addEdge(3, 10);
-        g2.addEdge(3, 11);
-        g2.addEdge(3, 12);
+	    Graph g = new Graph(5);
+        g.addEdge(1, 0);
+        g.addEdge(0, 2);
+        g.addEdge(2, 1);
+        g.addEdge(0, 3);
+        g.addEdge(1, 4);
 
 //        g2.printGraph();
 
@@ -27,8 +20,12 @@ public class Main {
 //        TransitiveClosure tc = new TransitiveClosure(graph);
 //        tc.prepareTransitiveClosure();
 
-        System.out.println("Printing K Cores:");
-        KCoresGraph kCoresGraph = new KCoresGraph(g2, 3);
-        kCoresGraph.makeKCoreGraph();
+//        System.out.println("Printing K Cores:");
+//        KCoresGraph kCoresGraph = new KCoresGraph(g2, 3);
+//        kCoresGraph.makeKCoreGraph();
+
+        IterativeDFS iterativeDFS = new IterativeDFS(g);
+        iterativeDFS.iterativeDFS(0);
+
     }
 }
