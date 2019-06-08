@@ -3,13 +3,12 @@ package com.venkatesh.practice;
 public class Main {
 
     public static void main(String[] args) {
-	    Graph g = new Graph(7);
+	    Graph g = new Graph(5);
         g.addEdge(0, 1);
-        g.addEdge(0, 2);
+        g.addEdge(0, 4);
         g.addEdge(1, 3);
-        g.addEdge(1, 4);
-        g.addEdge(1, 5);
-        g.addEdge(2, 6);
+        g.addEdge(2, 0);
+        g.addEdge(3, 2);
 
 //        g2.printGraph();
 
@@ -30,8 +29,11 @@ public class Main {
         g.printGraph();
 //        TopologicalSorting topologicalSorting = new TopologicalSorting(g);
 //        topologicalSorting.performTopologicalSort();
-        NodeAtALevelUndirectedGraph nodeAtALevelUndirectedGraph = new NodeAtALevelUndirectedGraph(g);
-        System.out.println(nodeAtALevelUndirectedGraph.printCountOfNodesAtLevel(4));
+//        NodeAtALevelUndirectedGraph nodeAtALevelUndirectedGraph = new NodeAtALevelUndirectedGraph(g);
+//        System.out.println(nodeAtALevelUndirectedGraph.printCountOfNodesAtLevel(4));
+
+        PossiblePaths possiblePaths = new PossiblePaths(g);
+        possiblePaths.printPossiblePaths(4,1);
 
 
     }

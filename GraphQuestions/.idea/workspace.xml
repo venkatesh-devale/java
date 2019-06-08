@@ -15,8 +15,22 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/venkatesh/practice/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="82" selection-start-line="32" selection-start-column="82" selection-end-line="32" selection-end-column="82" />
+            <state relative-caret-position="357">
+              <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PossiblePaths.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/venkatesh/practice/PossiblePaths.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#487#502#0" expanded="true" />
+                <element signature="e#548#557#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -33,8 +47,8 @@
       <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/venkatesh/practice/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+            <state relative-caret-position="126">
+              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1562#1563#0" expanded="true" />
@@ -44,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NodeAtALevelUndirectedGraph.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NodeAtALevelUndirectedGraph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/venkatesh/practice/NodeAtALevelUndirectedGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+            <state relative-caret-position="102">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#468#477#0" expanded="true" />
@@ -72,7 +86,7 @@
       <file leaf-file-name="KCoresGraph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/venkatesh/practice/KCoresGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
+            <state relative-caret-position="244">
               <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -116,9 +130,10 @@
         <option value="$PROJECT_DIR$/src/com/venkatesh/practice/KCoresGraph.java" />
         <option value="$PROJECT_DIR$/src/com/venkatesh/practice/IterativeDFS.java" />
         <option value="$PROJECT_DIR$/src/com/venkatesh/practice/TopologicalSorting.java" />
-        <option value="$PROJECT_DIR$/src/com/venkatesh/practice/Graph.java" />
-        <option value="$PROJECT_DIR$/src/com/venkatesh/practice/Main.java" />
         <option value="$PROJECT_DIR$/src/com/venkatesh/practice/NodeAtALevelUndirectedGraph.java" />
+        <option value="$PROJECT_DIR$/src/com/venkatesh/practice/Graph.java" />
+        <option value="$PROJECT_DIR$/src/com/venkatesh/practice/PossiblePaths.java" />
+        <option value="$PROJECT_DIR$/src/com/venkatesh/practice/Main.java" />
       </list>
     </option>
   </component>
@@ -223,12 +238,12 @@
       <workItem from="1559252523050" duration="13419000" />
       <workItem from="1559799591006" duration="1337000" />
       <workItem from="1559890127948" duration="1795000" />
-      <workItem from="1559969329028" duration="2780000" />
+      <workItem from="1559969329028" duration="5997000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19331000" />
+    <option name="totallyTimeSpent" value="22548000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -460,16 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/venkatesh/practice/KCoresGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/venkatesh/practice/IterativeDFS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -484,10 +489,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/venkatesh/practice/NodeAtALevelUndirectedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#468#477#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/venkatesh/practice/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/venkatesh/practice/KCoresGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/venkatesh/practice/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        <state relative-caret-position="126">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1562#1563#0" expanded="true" />
@@ -496,20 +529,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/venkatesh/practice/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/venkatesh/practice/PossiblePaths.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="82" selection-start-line="32" selection-start-column="82" selection-end-line="32" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/venkatesh/practice/NodeAtALevelUndirectedGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        <state relative-caret-position="352">
+          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#468#477#0" expanded="true" />
+            <element signature="e#487#502#0" expanded="true" />
+            <element signature="e#548#557#0" expanded="true" />
           </folding>
         </state>
       </provider>

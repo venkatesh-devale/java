@@ -21,7 +21,7 @@ public class Graph {
 
     public void addEdge(int s, int d) {
         this.adjacencyList[s].add(d);
-        this.adjacencyList[d].add(s);
+        //this.adjacencyList[d].add(s);
     }
 
     public void printGraph() {
