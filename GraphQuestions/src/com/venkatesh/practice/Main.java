@@ -3,12 +3,12 @@ package com.venkatesh.practice;
 public class Main {
 
     public static void main(String[] args) {
-	    Graph g = new Graph(5);
-        g.addEdge(0, 1);
-        g.addEdge(0, 4);
-        g.addEdge(1, 3);
-        g.addEdge(2, 0);
-        g.addEdge(3, 2);
+	    // Graph g = new Graph(5);
+     //    g.addEdge(0, 1);
+     //    g.addEdge(0, 4);
+     //    g.addEdge(1, 3);
+     //    g.addEdge(2, 0);
+     //    g.addEdge(3, 2);
 
 //        g2.printGraph();
 
@@ -26,15 +26,20 @@ public class Main {
 
 //        IterativeDFS iterativeDFS = new IterativeDFS(g);
 //        iterativeDFS.iterativeDFS(0);
-        g.printGraph();
+//        g.printGraph();
 //        TopologicalSorting topologicalSorting = new TopologicalSorting(g);
 //        topologicalSorting.performTopologicalSort();
 //        NodeAtALevelUndirectedGraph nodeAtALevelUndirectedGraph = new NodeAtALevelUndirectedGraph(g);
 //        System.out.println(nodeAtALevelUndirectedGraph.printCountOfNodesAtLevel(4));
 
-        PossiblePaths possiblePaths = new PossiblePaths(g);
-        possiblePaths.printPossiblePaths(4,1);
+        // PossiblePaths possiblePaths = new PossiblePaths(g);
+        // possiblePaths.printPossiblePaths(4,1);
 
+        int[][] matrix = {
+                {3,3}, {1,1}
+        };
+        MinimumInitialVerticesToTraverseEntireMatrix minimumInitialVertices = new MinimumInitialVerticesToTraverseEntireMatrix();
+        minimumInitialVertices.printMinimumInitialVertices(matrix);
 
     }
 }
