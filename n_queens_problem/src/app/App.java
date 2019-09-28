@@ -1,12 +1,16 @@
 package app;
 
+
 public class App {
 
     public static void main(String[] args) throws Exception {
-        int n = 3;
+        int n = 4;
         Position[] positions = new Position[n];
         boolean hasSolution = nQueenProblemHelper(n, 0, positions);
         System.out.println(hasSolution);
+        for(Position position: positions) {
+            System.out.println(position.row + ", " + position.col);
+        }
     }
 
     private static boolean nQueenProblemHelper(int n, int row, Position[] positions) {
